@@ -3,11 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-            Scanner sc = new Scanner(System.in);
-            Circulo c = new Circulo();
-            Livro l = new Livro();
+        Scanner sc = new Scanner(System.in);
+        Circulo c = new Circulo();
+        Livro l = new Livro();
+        Retangulo r = new Retangulo();
 
-            int i = 0;
+
+
+        int i = 0;
 
         do {
             System.out.println("========== Lista de Exercício 02 - Classes Python ==========\n");
@@ -42,13 +45,19 @@ public class Main {
                     break;
 
 
+                case 3:
+                    System.out.println("3) Crie uma classe chamada Retangulo que tenha atributos base e altura. Implemente um método chamado calcular_area que retorna a área do retângulo.");
 
+                    System.out.println("\n  - Digite o valor da base: ");
+                    r.base = sc.nextDouble();
+                    sc.nextLine();
 
+                    System.out.println("  -  Digite o valor da altura: ");
+                    r.altura = sc.nextDouble();
+                    sc.nextLine();
 
-
-
-
-
+                    System.out.println("R: A área do retangulo é = " + r.calcular_AreaRetangulo(r.altura, r.base));
+                    break;
 
             }
 
